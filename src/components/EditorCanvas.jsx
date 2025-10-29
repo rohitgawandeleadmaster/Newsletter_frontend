@@ -311,7 +311,7 @@ const EditorCanvas = forwardRef(
       style={{
     backgroundColor: globalSettings.backgroundColor || "#ffffff",
     backgroundImage:
-      "radial-gradient(circle, rgba(255,0,200,0.4) 2px, transparent 1px), radial-gradient(circle, rgba(160,0,255,0.4) 1px, transparent 1px)",
+      "radial-gradient(circle, rgba(255,0,200,0.4) 2px, transparent 1px)",
     backgroundSize: "20px 20px, 25px 25px",
     backgroundPosition: "0 0, 9px 9px",
 
