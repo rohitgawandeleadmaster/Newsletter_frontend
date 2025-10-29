@@ -184,8 +184,10 @@ return (
           </div>
 
           {/* Template Cards */}
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {section.templates.map((template, i) => (
+              
               <div
                 key={i}
                 className="
@@ -209,6 +211,13 @@ return (
                   rel="noopener noreferrer"
                   className="block h-full flex-col"
                 >
+                  <div className="p-5 bg-gradient-to-r from-[#f51398] via-[#c40cd8] to-[#2001fd] relative">
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                    <h3 className="text-lg font-bold text-white text-center relative z-10
+                        tracking-tight leading-tight">
+                        {template.title}
+                    </h3>
+                  </div>
                   {/* Image Container */}
                   <div className="flex-1 overflow-hidden min-h-0 bg-gray-100">
                     <img
@@ -219,13 +228,13 @@ return (
                   </div>
 
                   {/* Title - Always visible at bottom */}
-                  <div className="p-5 bg-gradient-to-r from-[#f51398] via-[#c40cd8] to-[#2001fd] relative">
+                  {/* <div className="p-5 bg-gradient-to-r from-[#f51398] via-[#c40cd8] to-[#2001fd] relative">
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
                     <h3 className="text-lg font-bold text-white text-center relative z-10
                         tracking-tight leading-tight">
                         {template.title}
                     </h3>
-                  </div>
+                  </div> */}
                 </a>
               </div>
             ))}
